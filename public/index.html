@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini Datadog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Mini Datadog 📊</h1>
+  <div id="alert-banner"></div>
+  <p id="count">Loading...</p>
+  <select id="level-filter">
+  <option value="">All levels</option>
+  <option value="ERROR">ERROR</option>
+  <option value="WARN">WARN</option>
+  <option value="INFO">INFO</option>
+</select>
+<input id="search-box" placeholder="Message mein search karo..." />
+
+  <table>
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Service</th>
+        <th>Level</th>
+        <th>Message</th>
+      </tr>
+    </thead>
+    <tbody id="log-table"></tbody>
+
+  </table>
+
+  <script src="app.js"></script>
+</body>
+</html>
